@@ -74,6 +74,7 @@ namespace Barista.Builder
 
         public Coffee Validate(int temp)
         {
+            this._temperature = temp;
             if (temp == 86) return this as Espresso;
             if (temp == 89) return this as Americano;
             if (temp == 90) return this as Macchiato;
