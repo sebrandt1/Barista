@@ -27,11 +27,6 @@ namespace Barista.Builder
         public bool HasMilkFoam => _milkFoam;
         public CupSize Size => this._size;
 
-        //default milk to 0 since not all coffees use milk
-        public Coffee()
-        {
-            _milk = 0;
-        }
 
         public IBeverage Init()
         {
