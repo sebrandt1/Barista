@@ -1,1 +1,6 @@
 name: first workflow
+on: [push]
+jobs: 
+  build: 
+    name: build job
+    runs-on: windows-latest
